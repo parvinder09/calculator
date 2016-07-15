@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Calculator</title>
+        <link rel="stylesheet" href="style.css" />
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>
+		<script src="newcalci.js"></script>
+    </head>
+	<style>
+		.container{
+			width:400px;
+			margin-left:450px;
+			margin-top:100px;
+			background-color:lightgrey;
+			padding:20px 20px 20px 20px;
+			border-radius:10px;
+		
+		}
+		.row{
+			text-align:center;
+			padding: 3px 3px 3px 3px;
+		}
+		.btn{
+			width:60px;
+			height:60px;
+			font-size:20px;
+			}
+		.results{
+			background-color:white;		
+			margin-bottom:8px;
+			height:50px;
+			font-size:40px;
+			width:370px;
+			word-break: break-all; 
+			word-wrap: break-word;
+			overflow:hidden;
+		}
+		.display{
+			word-break:break-all;
+
+		}
+		.heading{
+			font-family:Comic Sans MS, cursive, sans-serif;
+			font-size:10px;
+			margin-bottom:4px;
+		}
+	</style>
+<body>
+	<div class="container">
+		<div class="row">
+		<div class="col col-xs-12">
+		<div class="row ">
+			<div class="col col-xs-12 heading">
+			<h3>Freecodecamp Calculator</h3>
+			</div>
+		</div>
+		
+		<div class="row display">
+			
+			<div class="col col-xs-12 results" id="result">
+					
+			</div>
+	
+		</div>
+		
+		<div class="row firstrow">
+			
+			<div class="col col-xs-3">
+			<div class="btn btn-info" id="allclear">
+			AC
+			</div>
+			</div>
+			<div class="col col-xs-3">
+			<div class="btn btn-info" id="clear">
+			CE
+			</div>
+			</div>
+			<div class="col col-xs-3">
+			<div class="btn btn-info operator" id="percentage" >
+			%
+			</div>
+			</div>
+			<div class="col col-xs-3">
+			<div class="btn btn-info operator" id="divide">
+			/
+			</div>
+			</div>
+		</div>
+		<div class="row secondrow">
+			<div class="col col-xs-3">
+			<div class="btn btn-info number">
+			7
+			</div>
+			</div>
+			<div class="col col-xs-3">
+			<div class="btn btn-info number">
+			8
+			</div>
+			</div>
+			<div class="col col-xs-3">
+			<div class="btn btn-info number">
+			9
+			</div>
+			</div>
+			<div class="col col-xs-3">
+			<div class="btn btn-info operator" id="multiply" >
+			*
+			</div>
+			</div>
+
+		</div>
+		<div class="row thirdrow">
+			<div class="col col-xs-3">
+			<div class="btn btn-info number">
+			4
+			</div>
+			</div>
+			<div class="col col-xs-3">
+			<div class="btn btn-info number">
+			5
+			</div>
+			</div>
+			<div class="col col-xs-3">
+			<div class="btn btn-info number">
+			6
+			</div>
+			</div>
+			<div class="col col-xs-3">
+			<div class="btn btn-info operator" id="minus">
+			-
+			</div>
+			</div>
+
+		</div>
+		<div class="row fourthrow">
+			<div class="col col-xs-3">
+			<div class="btn btn-info number">
+			1
+			</div>
+			</div>
+			<div class="col col-xs-3">
+			<div class="btn btn-info number">
+			2
+			</div>
+			</div>
+			<div class="col col-xs-3">
+			<div class="btn btn-info number">
+			3
+			</div>
+			</div>
+			<div class="col col-xs-3">
+			<div class="btn btn-info operator" id="add">
+			+
+			</div>
+			</div>
+
+		</div>
+		<div class="row fifthrow">
+			<div class="col col-xs-3">
+			<div class="btn btn-info">
+			
+			</div>
+			</div>
+			<div class="col col-xs-3">
+			<div class="btn btn-info number">
+			0
+			</div>
+			</div>
+			<div class="col col-xs-3">
+			<div class="btn btn-info">
+			Ans
+			</div>
+			</div>
+			<div class="col col-xs-3">
+			<div class="btn btn-info" id="equal">
+			=
+			</div>
+			</div>
+
+		</div>
+		
+		</div>
+		</div>
+	</div>
+</body>
+</html>
